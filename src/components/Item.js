@@ -19,7 +19,7 @@ function Item({ item, onUpdateItem, onDeleteItem }) {
       method: 'DELETE',
     })
     .then(resp => resp.json())
-    .then(onDeleteItem(item.id))
+    .then(() => onDeleteItem(item))
     .catch(err => console.log(err));
   }
 

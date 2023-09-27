@@ -25,8 +25,8 @@ function ShoppingList() {
     setItems(updatedItems);
   }
 
-  function handleDeleteItem(itemID) {
-    const deletedItems = items.filter(item => item.id !== itemID);
+  function handleDeleteItem(deletedItem) {
+    const deletedItems = items.filter(item => item.id !== deletedItem.id);
     setItems(deletedItems);
   }
 
